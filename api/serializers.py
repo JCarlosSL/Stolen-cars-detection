@@ -10,12 +10,14 @@ class DataSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         data = DataFormulario(**validated_data)
         data.save()
-        f = open('yolo/input.txt','w')
-        f.write(validated_data['placa']+'\n')
-        f.write(validated_data['marca']+'\n')
-        f.write(validated_data['modelo']+'\n')
-        f.write(validated_data['tipo']+'\n')
-        f.write(validated_data['color']+'\n')
+        f = open('yolo/files/Secondary_CarColor/labels.txt','w')
+        f.write(validated_data['color'])
+        f.close()
+        f = open('yolo/files/Secondary_CarMake/labels.txt','w')
+        f.write(validated_data['marca'])
+        f.close()
+        f = open('yolo/files/Secondary_VehicleType/labels.txt','w')
+        f.write(validated_data['tipo'])
         f.close()
         return data
 
