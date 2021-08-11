@@ -41,9 +41,10 @@ marca = {
 }
 
 tipo = {
-    'couple' : 'coupe;;;;;',
+    'coupe' : 'coupe;;;;;',
     'largevehicle' : ';largevehicle;;;;',
-    'sedan' : ';;sedan;;;',
+#    'sedan' : ';;sedan;;;',
+    'sedan' : 'sedan',
     'suv' : ';;;suv;;',
     'truck' : ';;;;truck;',
     'van' : ';;;;;van',

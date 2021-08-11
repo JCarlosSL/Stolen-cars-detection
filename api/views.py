@@ -43,7 +43,7 @@ def ls(ruta = getcwd()):
     return [arch.name for arch in scandir(ruta) if arch.is_file()]
 
 def predictionYolo(user):
-    #output = os.popen('flutter doctor {0}'.format('file')).read()
+    output = os.popen('sh /home/xavier/deepstream.sh').read()
     #print(output)
     #f = File(open('yolo/input.png'),'rb')
     print("")
