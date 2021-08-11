@@ -62,7 +62,7 @@ class MyFormState extends State<MyForm>{
 		}
 	}
   Future<void> estimateGoogle(String? posicion1, String posicion2) async {
-    var url = "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=' + posicion1 + '&destinations=' + posicion2 + '&key=AIzaSyBJTBcmFmqdOkTckS3K7LTxsxt7JfBS5p0";
+    var url = "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=' + posicion1 + '&destinations=' + posicion2 + '&key=apikey-here";
 	  print("***************  URL  *********************");
     print(url);
     Dio dio = new Dio();
